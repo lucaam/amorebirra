@@ -1,0 +1,54 @@
+body {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.ba-header {
+	padding: 12rem 0;
+	background-color: #fafafa;
+}
+
+.ba-navbar {
+	background-color: #fafafa;
+	overflow: hidden;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky-top + .content {
+	padding-top: 60px;
+}
+
+.ba-navbar li {
+	text-transform: uppercase;
+}
+
+#beer .row {
+	padding: 2rem 0;
+}
+
+.beer-name {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 5px;
+	border-bottom: 2px solid black;
+}
+
+.beer-description {
+	text-align: justify;
+}
+
+.btn {
+	border-radius: 0 !important;
+}
+
+.btn-yellow {
+	background-color: #ECAF4A !important;
+}

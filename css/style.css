@@ -18,6 +18,18 @@ body {
 	letter-spacing: 2px;
 }
 
+section {
+	padding: 2rem 0;
+}
+
+#about {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../resources/barrels-beer.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .content {
 	padding: 16px;
 }

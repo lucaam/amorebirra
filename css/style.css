@@ -8,6 +8,7 @@ html {
 .ba-header {
   padding: 8rem 0;
   background-color: #495057;
+  color: #fafafa;
 }
 #beer {
   padding: 8rem 0;
@@ -15,31 +16,24 @@ html {
 }
 
 a {
-  color: #212529;
+  color: #fafafa;
 }
 /* unvisited link */
 a:link {
-  color: #212529;
-}
-
-/* visited link */
-a:visited {
-  color: #212529;
-}
-
-/* mouse over link */
-a:hover {
-  text-decoration: underline;
-  color: white;
-}
-
-/* selected link */
-a:active {
-  text-decoration: underline;
-  color: white;
-}
-
-a:link {
-  text-decoration: none;
-  color: 212529;
-}
+	color: #fafafa;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: #fafafa;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: #fafafa;
+  }
+  
+  /* selected link */
+  a:active {
+	color: fafafa#;
+  }

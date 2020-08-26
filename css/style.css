@@ -1,0 +1,107 @@
+body {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.ba-header {
+	padding: 12rem 0;
+	background-color: #fafafa;
+}
+
+.ba-navbar {
+	background-color: #fafafa;
+	overflow: hidden;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+section {
+	padding: 2rem 0;
+}
+
+#about {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../resources/barrels-beer.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky-top + .content {
+	padding-top: 60px;
+}
+
+.ba-navbar li {
+	text-transform: uppercase;
+}
+
+#beer .row {
+	padding: 2rem 0;
+}
+
+.beer-name {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 5px;
+	border-bottom: 2px solid black;
+}
+
+.beer-description {
+	text-align: justify;
+}
+
+.btn {
+	border-radius: 0 !important;
+}
+
+.btn-yellow {
+	background-color: #ECAF4A !important;
+}
+
+a {
+	color: white;
+  }
+
+  /* unvisited link */
+a:link {
+	color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: grey;
+  }
+  
+  /* selected link */
+  a:active {
+	color: grey;
+  }
+
+  a:link {
+	text-decoration: none;
+  }
+  
+  a:visited {
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+	color: wheat;
+  }
+  
+  a:active {
+	text-decoration: underline;
+  }

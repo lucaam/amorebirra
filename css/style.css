@@ -1,39 +1,18 @@
+html,
 body {
-  font-family: "Montserrat", sans-serif !important;
-}
+  font-family: 'Montserrat', sans-serif;
 
-html {
-  background-color: #323a40;
 }
-.ba-header {
-  padding: 8rem 0;
-  background-color: #495057;
-  color: #fafafa;
-}
-#beer {
-  padding: 8rem 0;
-  background-color: #323a40;
-}
-
 a {
-  color: #fafafa;
+  color: #363636;
 }
-/* unvisited link */
-a:link {
-	color: #fafafa;
-  }
-  
-  /* visited link */
-  a:visited {
-	color: #fafafa;
-  }
-  
-  /* mouse over link */
-  a:hover {
-	color: #fafafa;
-  }
-  
-  /* selected link */
-  a:active {
-	color: #fafafa;
-  }
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+  max-height:100%;
+}

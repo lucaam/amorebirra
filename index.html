@@ -25,23 +25,7 @@
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
-  <!-- Small css classes -->
-  <style>
-    .is-beer-image {
-      width: 128px !important;
-      height: 385px !important;
-    }
 
-    .has-content-centered {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .no-bullets {
-      list-style-type: none !important;
-    }
-  </style>
 </head>
 
 <body>
@@ -78,13 +62,13 @@
       </div>
       <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item is-active">
+          <a href="./index.html" class="navbar-item is-active">
             Birre
           </a>
           <a class="navbar-item">
             Produzione
           </a>
-          <a class="navbar-item">
+          <a href="./brewpub.html" class="navbar-item">
             Birrificio
           </a>
           <a class="navbar-item">
@@ -93,7 +77,7 @@
           <a class="navbar-item">
             Ordina
           </a>
-          <a class="navbar-item">
+          <a href="./contactus.html" class="navbar-item">
             Contattaci
           </a>
         </div>
@@ -208,22 +192,20 @@
           </p>
         </div>
         <!-- LOGO -->
-        <div class="column">
-          <div class="column is-4 is-offset-4">
+        <div class="column has-content-centered">
             <figure class="image is-96x96">
               <img src="./resources/logo_testo.png">
             </figure>
-          </div>
         </div>
         <!-- MENU -->
         <div class="column menu has-text-right pr-5">
           <ul class="menu-list no-bullets">
-            <li><a>Birre</a></li>
+            <li><a href="./index.html">Birre</a></li>
             <li><a>Produzione</a></li>
-            <li><a>Birrificio</a></li>
+            <li><a href="./brewpub.html">Birrificio</a></li>
             <li><a>Territorio</a></li>
             <li><a>Ordina</a></li>
-            <li><a>Contattaci</a></li>
+            <li><a href="./contactus.html">Contattaci</a></li>
           </ul>
         </div>
       </div>

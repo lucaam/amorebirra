@@ -29,62 +29,64 @@
 </head>
 
 <body>
-    <!-- START NAV -->
-    <nav class="navbar is-fixed-top">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item has-text-weight-bold" href="index.html">
-                    Birra Amore
-                </a>
-                <span class="navbar-burger burger" data-target="navbarMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a href="index.html" class="navbar-item">
-                        Birre
-                    </a>
-                    <a class="navbar-item">
-                        Produzione
-                    </a>
-                    <a href="brewpub.html" class="navbar-item is-active">
-                        Birrificio
-                    </a>
-                    <a class="navbar-item">
-                        Territorio
-                    </a>
-                    <a class="navbar-item">
-                        Ordina
-                    </a>
-                    <a href="contactus.html" class="navbar-item">
-                        Contattaci
-                    </a>
-                </div>
-            </div>
+   <!-- START HERO -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="level-item has-text-centered">
+          <figure class="image is-64x64">
+            <img src="./resources/logo96x96.png">
+          </figure>
         </div>
-    </nav>
-    <!-- END NAV -->
-    <!-- START HERO -->
-    <section class="hero">
-        <div class="hero-body hero-header">
-          <div class="container has-text-centered">
-            <div class="level-item has-text-centered">
-              <figure class="image is-64x64">
-                <img src="./resources/logo96x96.png">
-              </figure>
-            </div>
-            <h1 class="title is-uppercase">
-              <strong>Amore</strong>
-            </h1>
-            <h2 class="subtitle">
-              Italian <strong>craftbeer</strong>
-            </h2>
+        <h1 class="title is-uppercase">
+          <strong>Amore</strong>
+        </h1>
+        <h2 class="subtitle">
+          Italian <strong>craftbeer</strong>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- START NAV -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="#">
+          Birra Amore
+        </a>
+        <span class="navbar-burger burger" onclick="document.querySelector('.navbar-burger').classList.toggle('is-active');document.querySelector('.navbar-menu').classList.toggle('is-active');" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+            <a href="./index.html" class="navbar-item is-active">
+              Birre
+            </a>
+            <a class="navbar-item">
+              Produzione
+            </a>
+            <a href="./brewpub.html" class="navbar-item">
+              Birrificio
+            </a>
+            <a class="navbar-item">
+              Territorio
+            </a>
+            <a class="navbar-item">
+              Ordina
+            </a>
+            <a href="./contactus.html" class="navbar-item">
+              Contattaci
+            </a>
           </div>
-        </div>
-        <!-- START CONTENT -->
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
+  <!-- START CONTENT -->
+  <section class="section">
         <!-- PALE ALE -->
         <div class="container has-text-centered">
             <div class="columns is-vcentered">
@@ -109,18 +111,18 @@
     </section>
 
   <!-- FOOTER -->
-  <footer class="hero-footer">
+  <footer class="footer">
     <div class="content has-text-centered">
       <div class="columns is-vcentered">
         <!-- INFO -->
-        <div class="column is-4">
+        <div class="column">
           <p class="small">Prodotto da TERRAVECCHIA s.r.l.
             <br>
             Distribuito da BIRRA AMORE s.r.l.
             <br>
             FRASSO TELESINO (BN)
             <br>
-            P. IVA 01235860622
+            IT00BN0042K
           </p>
           <p class="small">Contattaci:
             <a href="tel:+390824973016">+390824973016</a>
@@ -128,13 +130,13 @@
           </p>
         </div>
         <!-- LOGO -->
-        <div class="column is-4 has-content-centered">
-          <figure class="image is-96x96">
-            <img src="./resources/logo_testo.png">
-          </figure>
+        <div class="column has-content-centered">
+            <figure class="image is-96x96">
+              <img src="./resources/logo_testo.png">
+            </figure>
         </div>
         <!-- MENU -->
-        <div class="column is-4 menu has-text-centered pr-5">
+        <div class="column menu has-text-right pr-5">
           <ul class="menu-list no-bullets">
             <li><a href="./index.html">Birre</a></li>
             <li><a>Produzione</a></li>

@@ -25,15 +25,27 @@
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- Small css classes -->
+  <style>
+    .is-beer-image {
+      width: 128px !important;
+      height: 385px !important;
+    }
+
+    .has-content-centered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- START NAV -->
   <nav class="navbar is-fixed-top">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item has-text-weight-bold" href="#">
           Birra Amore
         </a>
         <span class="navbar-burger burger" data-target="navbarMenu">
@@ -67,147 +79,112 @@
     </div>
   </nav>
   <!-- END NAV -->
-
-  <div class="container">
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="level-item has-text-centered">
-            <figure class="image is-64x64">
-              <img src="./resources/logo96x96.png">
-            </figure>
+  <!-- START HERO -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="level-item has-text-centered">
+          <figure class="image is-64x64">
+            <img src="./resources/logo96x96.png">
+          </figure>
+        </div>
+        <h1 class="title is-uppercase">
+          <strong>Amore</strong>
+        </h1>
+        <h2 class="subtitle">
+          Italian <strong>craftbeer</strong>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- START CONTENT -->
+  <section class="section">
+    <!-- PALE ALE -->
+    <div class="columns is-vcentered">
+      <div class="column has-content-centered">
+        <figure class="image is-beer-image">
+          <img src="./resources/pale_ale.png">
+        </figure>
+      </div>
+      <div class="column">
+        <div class="notification">
+          <p class="title">
+            Pale Ale <span class="has-text-weight-light is-size-7">6,0% vol.</span>
+          </p>
+          <div class="content has-text-justified">
+            Birra ad alta fermentazione dal colore dorato, delicata e piacevole da bere.
+            Birra rinfrescante con gusto morbido e rotondo.
+            La miscela di luppoli da il giusto amaro e un retrogusto agrumato.
+            Si abbina bene con salumi e formaggi.
           </div>
-          <h1 class="title is-uppercase">
-            <strong>Amore</strong>
-          </h1>
-          <h2 class="subtitle">
-            Italian <strong>craftbeer</strong>
-          </h2>
         </div>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="columns">
-        <div class="column is-2 is-offset-2">
-          <figure class="image is-1by3">
-            <img src="./resources/pale_ale.png">
-          </figure>
-        </div>
-        <div class="column is-5 is-offset-2">
-          <section class="hero">
-            <div class="hero-body">
-              <div class="container">
-                <span class="title">
-                  Pale Ale
-                </span>
-                <span>6,0% vol.</span>
-                <hr>
-                <h2 class="has-text-justified subtitle">
-                  Birra ad alta fermentazione dal colore dorato, delicata e piacevole da
-                  bere.
-                  Birra rinfrescante con gusto morbido e rotondo.
-                  La miscela di luppoli da il giusto amaro e un retrogusto agrumato.
-                  Si abbina bene con salumi e formaggi.
-                </h2>
-              </div>
-            </div>
-          </section>
+    </div>
+    <!-- LIGHT ALE -->
+    <div class="columns is-vcentered">
+      <div class="column">
+        <div class="notification">
+          <p class="title">
+            Light Ale <span class="has-text-weight-light is-size-7">4,5% vol.</span>
+          </p>
+          <div class="content has-text-justified">
+            Birra ad alta fermentazione dal colore chiaro, rinfrescante e beverina.
+            Una birra dal colore chiaro con un amaro piacevole
+            e un profumo di luppolo delicato.
+            Si abbina bene con aperitivi semplici.
+          </div>
         </div>
       </div>
-      <div class="columns">
-
-
-        <div class="column is-5 is-offset-2">
-
-
-          <section class="hero">
-            <div class="hero-body">
-              <div class="container">
-                <span class="title">
-                  Light Ale
-                </span>
-                <span>4,5% vol.</span>
-                <hr>
-                <h2 class="has-text-justified subtitle">
-                  Birra ad alta fermentazione dal colore chiaro, rinfrescante e beverina.
-                  Una birra dal colore chiaro con un amaro piacevole
-                  e un profumo di luppolo delicato.
-                  Si abbina bene con aperitivi semplici.
-                </h2>
-              </div>
-            </div>
-          </section>
-
-        </div>
-        <div class="column is-2 is-offset-2">
-          <figure class="image is-1by3">
-            <img src="./resources/light_ale.png">
-          </figure>
+      <div class="column has-content-centered">
+        <figure class="image is-beer-image">
+          <img src="./resources/light_ale.png">
+        </figure>
+      </div>
+    </div>
+    <!-- ITALIAN WHEAT ALE -->
+    <div class="columns is-vcentered">
+      <div class="column has-content-centered">
+        <figure class="image is-beer-image">
+          <img src="./resources/italian_wheat_ale.png">
+        </figure>
+      </div>
+      <div class="column">
+        <div class="notification">
+          <p class="title">
+            Italian Wheat Ale <span class="has-text-weight-light is-size-7">5,0% vol.</span>
+          </p>
+          <div class="content has-text-justified">
+            Birra ad alta fermentazione
+            dal colore chiaro profumata e beverina.
+            Una birra dal corpo vellutato con schiuma bianca e stretta, gli agrumi le donano un profumo
+            importante e un gusto rinfrescante.
+            Si abbina bene a stuzzichini, carni bianche o pesce.
+          </div>
         </div>
       </div>
-
-
-
-      <div class="columns">
-        <div class="column is-2 is-offset-2">
-          <figure class="image is-1by3">
-            <img src="./resources/italian_wheat_ale.png">
-          </figure>
-        </div>
-        <div class="column is-5 is-offset-2">
-          <section class="hero">
-            <div class="hero-body">
-              <div class="container">
-                <span class="title">
-                  Italian Wheat Ale
-                </span>
-                <span>5,0% vol.</span>
-                <hr>
-                <h2 class="has-text-justified subtitle">
-                  Birra ad alta fermentazione
-                  dal colore chiaro profumata e beverina.
-                  Una birra dal corpo vellutato con schiuma bianca e stretta, gli agrumi le donano un profumo
-                  importante e un gusto rinfrescante.
-                  Si abbina bene a stuzzichini, carni bianche o pesce.
-                </h2>
-              </div>
-            </div>
-          </section>
+    </div>
+    <!-- DARK ALE -->
+    <div class="columns is-vcentered">
+      <div class="column">
+        <div class="notification">
+          <p class="title">
+            Dark Ale <span class="has-text-weight-light is-size-7">7,5% vol.</span>
+          </p>
+          <div class="content has-text-justified">
+            Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato.
+            Il suo colore e il sapore dei malti usati la rendono una birra particolarmente gustosa.
+            Si abbina bene con piatti più elaborati come carne rossa, selvaggina, formaggi e salumi.
+          </div>
         </div>
       </div>
-      <div class="columns">
-
-
-        <div class="column is-5 is-offset-2">
-          <section class="hero">
-            <div class="hero-body">
-              <div class="container">
-                <span class="title">
-                  Dark Ale
-                </span>
-                <span>7,5% vol.</span>
-                <hr>
-                <h2 class="has-text-justified subtitle">
-                  Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato.
-                  Il suo colore e il sapore dei malti usati la rendono una birra particolarmente gustosa.
-                  Si abbina bene con piatti più elaborati come carne rossa, selvaggina, formaggi e salumi.
-
-                </h2>
-              </div>
-            </div>
-        </div>
-
-        <div class="column is-2 is-offset-2">
-          <figure class="image is-1by3">
-            <img src="./resources/dark_ale.png">
-          </figure>
-        </div>
+      <div class="column has-content-centered">
+        <figure class="image is-beer-image">
+          <img src="./resources/dark_ale.png">
+        </figure>
       </div>
-    </section>
-  </div>
-
-
+    </div>
+  </section>
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="content has-text-centered">
       <div class="columns is-vcentered">

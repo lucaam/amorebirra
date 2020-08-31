@@ -45,14 +45,32 @@
 </head>
 
 <body>
+  <!-- START HERO -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="level-item has-text-centered">
+          <figure class="image is-64x64">
+            <img src="./resources/logo96x96.png">
+          </figure>
+        </div>
+        <h1 class="title is-uppercase">
+          <strong>Amore</strong>
+        </h1>
+        <h2 class="subtitle">
+          Italian <strong>craftbeer</strong>
+        </h2>
+      </div>
+    </div>
+  </section>
   <!-- START NAV -->
-  <nav class="navbar is-fixed-top">
+  <nav class="navbar">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item has-text-weight-bold" href="#">
           Birra Amore
         </a>
-        <span class="navbar-burger burger" data-target="navbarMenu">
+        <span class="navbar-burger burger" onclick="document.querySelector('.navbar-burger').classList.toggle('is-active');document.querySelector('.navbar-menu').classList.toggle('is-active');" data-target="navbarMenu">
           <span></span>
           <span></span>
           <span></span>
@@ -83,24 +101,6 @@
     </div>
   </nav>
   <!-- END NAV -->
-  <!-- START HERO -->
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="level-item has-text-centered">
-          <figure class="image is-64x64">
-            <img src="./resources/logo96x96.png">
-          </figure>
-        </div>
-        <h1 class="title is-uppercase">
-          <strong>Amore</strong>
-        </h1>
-        <h2 class="subtitle">
-          Italian <strong>craftbeer</strong>
-        </h2>
-      </div>
-    </div>
-  </section>
   <!-- START CONTENT -->
   <section class="section">
     <!-- PALE ALE -->
@@ -232,7 +232,8 @@
 
 
 
-  <!-- custom JavaScript -->
+  <!-- jQuery and custom JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
 

@@ -1,176 +1,259 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Birrificio Amore</title>
-	<!-- custom pieces -->
-	<link rel="stylesheet" href="./css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Birra Amore - Scopri le nostre birre artigianali</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./resources/pint.png" />
+  <meta name="description"
+    content="Quattro tipologie di birra prodotte con Amore e passione a Frasso Telesino (BN). Visita il nostro sito per scoprirle tutte. Birra Amore S.r.l. - P. IVA 01235860622 - Frasso Telesino (BN) 82030">
+  <meta name="author" content="Birrificio Amore" />
+  <meta name="keywords"
+    content="birra, amore, birra amore, terravecchia, birra frasso telesino, birrificio frasso telesino, birra frasso, birrificio, birrificio benevento, birrifici beneventano, birra benevento, birra artigianale, birrificio artigianale frasso telesino, raffaele amore, luca amoriello, birra amore srl, birra amore s.r.l., birra artigianale frasso, birra artigianale frasso telesino, pale ale, light ale, dark ale, italian wheat ale, birra amore frasso telesino, birra sannio, birrificio sannio, birra artigianale sannio, birre del sannio, birra amore sannio, birrificio amore sannio, birrificio amore frasso telesino, birrificio benevento, birrifici del sannio, birra sannio, birra artigianale sannio" />
+  <!-- favicon for FF, Chrome, Opera -->
+  <link rel="icon" type="image/png" href="./resources/pint.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="./resources/pint.png" sizes="32x32">
+
+  <!-- favicon for IE -->
+  <link rel="icon" type="image/x-icon" href="./resources/pint.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./resources/pint.png" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-	<!-- header -->
-	<header class="ba-header container-fluid my-auto">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<img src="./resources/golden_wheat.png">
-				<h1 class="text-uppercase display-4">Amore</h1>
-				<p class="lead">Italian craftbeer</p>
-			</div>
-		</div>
-	</header>
-	<!-- navbar -->
-	<nav class="ba-navbar navbar navbar-expand-lg navbar-light">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mx-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Birra</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Produzione</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Azienda</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<!-- beer section -->
-	<section id="beer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm my-auto text-center">
-					<img src="./resources/light_ale.png">
-				</div>
-				<div class="col-sm my-auto text-center">
-					<p class="beer-name">Light Ale - 4,5% vol. - 50 cl/33 cl</p>
-					<p class="beer-description">Birra ad alta fermentazione dal colore chiaro, rinfrescante e beverina.
-						Una birra dal colore chiaro con un amaro piacevole
-						e un profumo di luppolo delicato.
-						Si abbina bene con aperitivi semplici.
-				</div>
-				<div class="w-100"></div>
-				<div class="col-sm my-auto text-center">
-					<p class="beer-name">Pale Ale - 6,0% vol. - 50 cl/33 cl</p>
-					<p class="beer-description">Birra ad alta fermentazione dal colore dorato, delicata e piacevole da
-						bere.
-						Birra rinfrescante con gusto morbido e rotondo.
-						La miscela di luppoli da il giusto amaro e un retrogusto agrumato.
-						Si abbina bene con salumi e formaggi.
-				</div>
-				<div class="col-sm my-auto text-center">
-					<img src="./resources/pale_ale.png">
-				</div>
+  <!-- START NAV -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          Birra Amore
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-active">
+            Birre
+          </a>
+          <a class="navbar-item">
+            Produzione
+          </a>
+          <a class="navbar-item">
+            Birrificio
+          </a>
+          <a class="navbar-item">
+            Territorio
+          </a>
+          <a class="navbar-item">
+            Ordina
+          </a>
+          <a class="navbar-item">
+            Contattaci
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAV -->
 
-				<div class="w-100"></div>
-				<div class="col-sm my-auto text-center">
-					<img src="./resources/italian_wheat_ale.png">
-				</div>
-				<div class="col-sm my-auto text-center">
-					<p class="beer-name">Italian Wheat Ale - 5,0% vol. - 50 cl/33 cl</p>
-					<p class="beer-description">Birra ad alta fermentazione
-						dal colore chiaro profumata e beverina.
-						Una birra dal corpo vellutato con schiuma bianca e stretta, gli agrumi le donano un profumo
-						importante e un gusto rinfrescante.
-						Si abbina bene a stuzzichini, carni bianche o pesce.
-				</div>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="level-item has-text-centered">
+            <figure class="image is-64x64">
+              <img src="./resources/logo96x96.png">
+            </figure>
+          </div>
+          <h1 class="title is-uppercase">
+            <strong>Amore</strong>
+          </h1>
+          <h2 class="subtitle">
+            Italian <strong>craftbeer</strong>
+          </h2>
+        </div>
+      </div>
+    </section>
 
-
-				<div class="w-100"></div>
-				<div class="col-sm my-auto text-center">
-					<p class="beer-name">Dark Ale - 7,5% vol. - 50 cl/33 cl</p>
-					<p class="beer-description">Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato.
-						Il suo colore e il sapore dei malti usati la rendono una birra particolarmente gustosa.
-						Si abbina bene con piatti più elaborati come carne rossa, selvaggina, formaggi e salumi.
-				</div>
-				<div class="col-sm my-auto text-center">
-					<img src="./resources/dark_ale.png">
-				</div>
-			</div>
-			<p class="text-right"><a href="#"><button type="button"
-						class="btn btn-yellow text-uppercase">Ordina Birra Amore!</button></a></p>
-		</div>
-	</section>
-	<!-- another section -->
-	<section id="about">
-		<div class="container text-light my-5">
-			<div class="row">
-				<div class="col-sm my-auto text-center">
-					<!-- temporary beer emoji that should be go away with the brand -->
-					<p class="display-1">🍻</p>
-				</div>
-				<div class="col-sm my-auto">
-					<p class="lead text-center text-uppercase">Birrificio Amore</p>
-					<p class="text-justify">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend ante
-						fermentum, porta risus quis, rutrum turpis. Quisque eu luctus turpis. Vestibulum felis justo,
-						mattis eu quam non, porttitor ullamcorper neque. Duis interdum sed nunc sed fringilla. Phasellus
-						ut lorem eget lacus scelerisque ornare. Nunc ac odio quis mauris congue maximus ac eget dolor.
-						Suspendisse sit amet tristique lorem. Sed gravida fringilla turpis, nec congue sem eleifend vel.
-						Phasellus egestas felis nec congue pretium. Duis sed felis scelerisque nisi mollis tincidunt.
-						Donec non elementum nunc, at finibus sem. Nunc congue pretium nulla, nec fermentum nulla
-						vehicula sit amet.
-					</p>
+    <section class="section">
+      <div class="columns">
+        <div class="column is-2 is-offset-1">
+          <figure class="image is-1by3">
+            <img src="./resources/pale_ale.png">
+          </figure>
+        </div>
+        <div class="column is-5 is-offset-3">
+          <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+                <span class="title">
+                  Pale Ale
+                </span>
+                <span>6,0% vol.</span>
+                <hr>
+                <h2 class="has-text-justified subtitle">
+                  Birra ad alta fermentazione dal colore dorato, delicata e piacevole da
+                  bere.
+                  Birra rinfrescante con gusto morbido e rotondo.
+                  La miscela di luppoli da il giusto amaro e un retrogusto agrumato.
+                  Si abbina bene con salumi e formaggi.
+                </h2>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="columns">
 
 
-				</div>
+        <div class="column is-5 is-offset-3">
 
-			</div>
-			<div class="row">
-				<div class="col-sm ">
-				</div>
-				<div class="col-sm-3">
-					<div class="">
-						<p class="small">Prodotto da TERRAVECCHIA s.r.l.
-							<br>
-							Distribuito da BIRRA AMORE s.r.l.
-							<br>
-							FRASSO TELESINO (BN)
-							<br>
-							IT00BN0042K
-						</p>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="">
-						<p class="small">Contattaci:
-							<br>
-							
-							<a href="tel:+390824973016">+390824973016</a>
 
-							<br>
-							
-							<a href="tel:+393386085634">+393386085634</a>
+          <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+                <span class="title">
+                  Light Ale
+                </span>
+                <span>4,5% vol.</span>
+                <hr>
+                <h2 class="has-text-justified subtitle">
+                  Birra ad alta fermentazione dal colore chiaro, rinfrescante e beverina.
+                  Una birra dal colore chiaro con un amaro piacevole
+                  e un profumo di luppolo delicato.
+                  Si abbina bene con aperitivi semplici.
+                </h2>
+              </div>
+            </div>
+          </section>
 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<!-- custom JavaScript -->
-	<script src="./js/main.js"></script>
+        </div>
+        <div class="column is-2 is-offset-1">
+          <figure class="image is-1by3">
+            <img src="./resources/light_ale.png">
+          </figure>
+        </div>
+      </div>
+
+
+
+      <div class="columns">
+        <div class="column is-2 is-offset-1">
+          <figure class="image is-1by3">
+            <img src="./resources/italian_wheat_ale.png">
+          </figure>
+        </div>
+        <div class="column is-5 is-offset-3">
+          <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+                <span class="title">
+                  Italian Wheat Ale
+                </span>
+                <span>5,0% vol.</span>
+                <hr>
+                <h2 class="has-text-justified subtitle">
+                  Birra ad alta fermentazione
+                  dal colore chiaro profumata e beverina.
+                  Una birra dal corpo vellutato con schiuma bianca e stretta, gli agrumi le donano un profumo
+                  importante e un gusto rinfrescante.
+                  Si abbina bene a stuzzichini, carni bianche o pesce.
+                </h2>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="columns">
+
+
+        <div class="column is-5 is-offset-3">
+          <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+                <span class="title">
+                  Dark Ale
+                </span>
+                <span>7,5% vol.</span>
+                <hr>
+                <h2 class="has-text-justified subtitle">
+                  Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato.
+                  Il suo colore e il sapore dei malti usati la rendono una birra particolarmente gustosa.
+                  Si abbina bene con piatti più elaborati come carne rossa, selvaggina, formaggi e salumi.
+
+                </h2>
+              </div>
+            </div>
+        </div>
+
+        <div class="column is-2 is-offset-1">
+          <figure class="image is-1by3">
+            <img src="./resources/dark_ale.png">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <div class="columns is-vcentered">
+        <div class="column">
+
+          <div class="column is-4 is-offset-4">
+            <figure class="image is-96x96">
+              <img src="./resources/logo_testo.png">
+            </figure>
+          </div>
+
+        </div>
+
+        <div class="column">
+          <p class="small">Prodotto da TERRAVECCHIA s.r.l.
+            <br>
+            Distribuito da BIRRA AMORE s.r.l.
+            <br>
+            FRASSO TELESINO (BN)
+            <br>
+            IT00BN0042K
+          </p>
+          <p class="small">Contattaci:
+            <a href="tel:+390824973016">+390824973016</a>
+            <a href="tel:+393386085634">+393386085634</a>
+
+          </p>
+        </div>
+        <div class="column">
+
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend ante
+            fermentum, porta risus quis, rutrum turpis. Quisque eu luctus turpis. Vestibulum felis justo,
+            mattis eu quam non, porttitor ullamcorper neque. Duis interdum sed nunc sed fringilla.
+            vehicula sit amet.
+          </p>
+        </div>
+
+      </div>
+  </footer>
+
+
+
+
+  <!-- custom JavaScript -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

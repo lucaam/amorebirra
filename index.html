@@ -37,6 +37,10 @@
       justify-content: center;
       align-items: center;
     }
+
+    .no-bullets {
+      list-style-type: none !important;
+    }
   </style>
 </head>
 
@@ -188,16 +192,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <div class="columns is-vcentered">
-        <div class="column">
-
-          <div class="column is-4 is-offset-4">
-            <figure class="image is-96x96">
-              <img src="./resources/logo_testo.png">
-            </figure>
-          </div>
-
-        </div>
-
+        <!-- INFO -->
         <div class="column">
           <p class="small">Prodotto da TERRAVECCHIA s.r.l.
             <br>
@@ -210,19 +205,27 @@
           <p class="small">Contattaci:
             <a href="tel:+390824973016">+390824973016</a>
             <a href="tel:+393386085634">+393386085634</a>
-
           </p>
         </div>
+        <!-- LOGO -->
         <div class="column">
-
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend ante
-            fermentum, porta risus quis, rutrum turpis. Quisque eu luctus turpis. Vestibulum felis justo,
-            mattis eu quam non, porttitor ullamcorper neque. Duis interdum sed nunc sed fringilla.
-            vehicula sit amet.
-          </p>
+          <div class="column is-4 is-offset-4">
+            <figure class="image is-96x96">
+              <img src="./resources/logo_testo.png">
+            </figure>
+          </div>
         </div>
-
+        <!-- MENU -->
+        <div class="column menu has-text-right pr-5">
+          <ul class="menu-list no-bullets">
+            <li><a>Birre</a></li>
+            <li><a>Produzione</a></li>
+            <li><a>Birrificio</a></li>
+            <li><a>Territorio</a></li>
+            <li><a>Ordina</a></li>
+            <li><a>Contattaci</a></li>
+          </ul>
+        </div>
       </div>
   </footer>
 

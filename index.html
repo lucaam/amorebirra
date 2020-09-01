@@ -20,7 +20,7 @@
   <link rel="icon" type="image/x-icon" href="./resources/pint.png">
   <link rel="shortcut icon" type="image/x-icon" href="./resources/pint.png" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <!-- Bulma Version 0.9.0-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
@@ -77,7 +77,7 @@
           <a class="navbar-item">
             Ordina
           </a>
-          <a href="./contactus.html" class="navbar-item">
+          <a href="#contact" class="navbar-item">
             Contattaci
           </a>
         </div>
@@ -172,6 +172,119 @@
       </div>
     </div>
   </section>
+  <!-- CONTACT -->
+  <section class="section is-medium" id="contact">
+    <div class="container">
+      <h1 class="title">Contattaci</h1>
+      <p class="is-size-5 has-text-centered">
+        In caso tu voglia avere maggiori informazioni riguardo la birra, 
+        il birrificio o una collaborazione con Birra Amore, non esitare a contattarci. 
+        Il nostro team sarà felice di rispondere al piu' presto alle tue richieste!
+      </p>
+      <div class="level pt-6">
+        <div class="level-item has-text-centered">
+          <div>
+            <span class="icon is-large">
+              <i class="fab fa-3x fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <span class="icon is-large">
+            <i class="fab fa-3x fa-facebook-messenger"></i>
+          </span>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <span class="icon is-large">
+              <i class="fab fa-3x fa-twitter"></i>
+            </span>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <button class="button is-dark" onclick="document.querySelector('.modal').classList.toggle('is-active');document.getElementsByTagName('html').classList.toggle('is-clipped');">
+              <span class="icon">
+                <i class="fas fa-at"></i>
+              </span>
+              <span>Inviaci una mail</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT MODAL -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <!-- MODAL CONTENT -->
+        <article class="message">
+          <div class="message-header">
+            <p>Inviaci una mail</p>
+            <button class="modal-close is-large" aria-label="close" onclick="document.querySelector('.modal').classList.toggle('is-active');document.getElementsByTagName('html').classList.toggle('is-clipped');"></button>
+          </div>
+          <div class="message-body">
+            <form>
+              <div class="field">
+                <label class="label">Nome</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Inserisci il nome">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Telefono</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="tel" placeholder="Inserisci un tuo recapito telefonico">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Inserisci la mail">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Oggetto</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Inserisci l'oggetto" value="Mail inviata dal sitoweb">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-pen"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Messaggio</label>
+                <div class="control">
+                  <textarea class="textarea has-fixed-size" placeholder="Scrivi il messaggio"></textarea>
+                </div>
+              </div>
+              <div class="field is-grouped is-grouped-right">
+                <p class="control">
+                  <a class="button is-danger is-light">
+                    Cancella
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-dark">
+                    Invia
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -212,9 +325,6 @@
       </div>
     </div>
   </footer>
-
-
-
 
   <!-- jQuery and custom JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>

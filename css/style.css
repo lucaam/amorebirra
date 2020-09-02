@@ -23,3 +23,10 @@ body {
   .social-media a {
 	margin-right: 10px;
   }
+
+  @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+    .reverse-columns {
+      flex-direction: column-reverse;
+      display: flex;
+    }
+  }

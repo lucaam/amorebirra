@@ -1,18 +1,33 @@
-html,
 body {
-  font-family: 'Montserrat', sans-serif;
-
-}
-a {
-  color: #363636;
+	font-family: 'Montserrat', sans-serif !important;
 }
 
-a:hover {
-  text-decoration: underline;
+.is-beer-image {
+  width: 128px !important;
+  height: 385px !important;
 }
 
-img {
-  max-width:100%;
-  height:auto;
-  max-height:100%;
+.has-content-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-bullets {
+  list-style-type: none !important;
+}
+
+.social-media {
+  margin-top: 30px;
+}
+  
+.social-media a {
+  margin-right: 10px;
+}
+
+@media(max-width: 768px) { /* <== You can change this break point as per your  needs */
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }

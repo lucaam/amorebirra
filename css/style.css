@@ -1,46 +1,48 @@
 body {
-	font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .is-beer-image {
-  width: 128px !important;
-  height: 385px !important;
+    width: 128px !important;
+    height: 385px !important;
 }
 
 .has-content-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .no-bullets {
-  list-style-type: none !important;
+    list-style-type: none !important;
 }
 
 .social-media {
-  margin-top: 30px;
+    margin-top: 30px;
 }
-  
+
 .social-media a {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .is-fullheight-background {
-  background-image: url(../resources/drop_malto_bw.jpg) ;
-  background-position: center center;
-  background-repeat:  no-repeat;
-  background-attachment: fixed;
-  background-size:  cover;
-  background-color: #999; 
-
-  
+    background-image: url(../resources/drop_malto_nogreen.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #999;
 }
 
 .is-contrast-text {
-  color: white;
-  mix-blend-mode: hard-light;
+    color: white;
+    mix-blend-mode: hard-light;
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }

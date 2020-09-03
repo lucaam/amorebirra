@@ -24,3 +24,23 @@ body {
 .social-media a {
   margin-right: 10px;
 }
+
+.is-fullheight-background {
+  background-image: url(../resources/drop_malto_bw.jpg) ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999; 
+
+  
+}
+
+.is-contrast-text {
+  color: white;
+  mix-blend-mode: hard-light;
+}
+
+html{
+  scroll-behavior: smooth;
+}

@@ -15,7 +15,9 @@ $(window).scroll(function() {
 });
  */
 
-
+$('.nav-link').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
+});
 /*
  *
  *	Url rewrite when clicking an anchor.

@@ -74,3 +74,21 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 1.0;
+}
+
+.display-6 {
+    font-size: 2.0rem;
+    font-weight: 150;
+    line-height: 0.9;
+}
+
+.display-7 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 0.5;
+}

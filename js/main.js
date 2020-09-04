@@ -2,7 +2,7 @@
  *
  *	Sticky navbar on scroll.
  *
- */
+
 var navbar = $(".navbar");
 var header = $(".navbar").offset().top;
 
@@ -13,6 +13,8 @@ $(window).scroll(function() {
         navbar.removeClass("sticky-top");
     }
 });
+ */
+
 
 /*
  *

@@ -8,21 +8,21 @@ var header = $(".navbar").offset().top;
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > header) {
-        navbar.addClass("is-fixed-top");
+        navbar.addClass("sticky-top");
     } else {
-        navbar.removeClass("is-fixed-top");
+        navbar.removeClass("sticky-top");
     }
 });
 
 /*
-*
-*	Url rewrite when clicking an anchor.
-*
-*/
+ *
+ *	Url rewrite when clicking an anchor.
+ *
+ */
 document.querySelectorAll('a').forEach(link => {
-	link.addEventListener('click', () => {
-		setTimeout(() => {
-			history.pushState('', document.title, window.location.pathname);
-		}, 100);
-	});
+    link.addEventListener('click', () => {
+        setTimeout(() => {
+            history.pushState('', document.title, window.location.pathname);
+        }, 100);
+    });
 });

@@ -1,10 +1,21 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
+    height: 100%;
 }
 
 .is-beer-image {
     width: 128px !important;
     height: 385px !important;
+}
+
+.sm-logo {
+    width: 96px;
+    height: 96px;
+}
+
+.md-logo {
+    width: 128px;
+    height: 128px;
 }
 
 .has-content-centered {
@@ -45,4 +56,12 @@ body {
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
 }

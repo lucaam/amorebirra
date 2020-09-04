@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Birra Amore - Scopri le nostre birre artigianali</title>
     <link rel="shortcut icon" type="image/x-icon" href="./resources/pint.png" />
     <meta name="description" content="Quattro tipologie di birra prodotte con Amore e passione a Frasso Telesino (BN). Visita il nostro sito per scoprirle tutte. Birra Amore S.r.l. - P. IVA 01235860622 - Frasso Telesino (BN) 82030">
@@ -19,434 +19,287 @@
     <link rel="icon" type="image/x-icon" href="./resources/pint.png">
     <link rel="shortcut icon" type="image/x-icon" href="./resources/pint.png" />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
 
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <section class="hero is-fullheight is-fullheight-background">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="level-item has-text-centered">
-                    <figure class="image is-128x128">
-                        <img src="./resources/logo_no_testo.png">
-                    </figure>
-                </div>
-                <h1 class="title is-contrast-text is-size-1 is-uppercase">
-                    <strong>Amore</strong>
-                </h1>
-                <h2 class="subtitle is-contrast-text is-size-3">
-                    Italian craftbeer
-                </h2>
-                <a class="button is-light " href="#start">Scopri le birre</a>
+    <div class="container-fluid is-fullheight-background row h-100 justify-content-center align-items-center">
+        <div class="text-center col-md">
+            <div>
+                <figure class="figure md-logo">
+                    <img src="./resources/logo_no_testo.png" class="figure-img img-fluid " alt="Logo">
+                </figure>
             </div>
+            <h1 class="is-contrast-text text-uppercase">
+                <strong>Amore</strong>
+            </h1>
+            <h2 class="lead is-contrast-text">
+                Italian craftbeer
+            </h2>
+            <a class="btn btn-outline-light is-contrast-text" href="#start">Scopri le birre</a>
         </div>
-    </section>
-    <!-- START HERO -->
-    <section class="hero" id="start">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="level-item has-text-centered">
-                    <figure class="image is-64x64">
-                        <img src="./resources/logo_no_testo.png">
-                    </figure>
-                </div>
-                <h1 class="title is-uppercase">
-                    <strong>Amore</strong>
-                </h1>
-                <h2 class="subtitle">
-                    Italian <strong>craftbeer</strong>
-                </h2>
+
+    </div>
+    <div class="container" id="start">
+        <div class="container pt-5 text-center">
+            <div class="text-center">
+                <figure class="figure sm-logo">
+                    <img src="./resources/logo_no_testo.png" class="figure-img img-fluid " alt="Logo">
+                </figure>
             </div>
+            <h1 class="text-uppercase">
+                <strong>Amore</strong>
+            </h1>
+            <h2 class="lead">
+                Italian <strong>craftbeer</strong>
+            </h2>
         </div>
-    </section>
-    <!-- START NAV -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item has-text-weight-bold" href="#">
-					Birra Amore
-				</a>
-                <span class="navbar-burger burger" onclick="document.querySelector('.navbar-burger').classList.toggle('is-active');document.querySelector('.navbar-menu').classList.toggle('is-active');" data-target="navbarMenu">
-					<span></span>
-                <span></span>
-                <span></span>
-                </span>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
-                    <a href="#beers" class="navbar-item">
-						Birre
-					</a>
-                    <a href="#contact" class="navbar-item">
-						Contattaci
-					</a>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Birra Amore</a>
+            <button class="navbar-toggler" type="button" data-toggle="col-mdlapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-mdlapse navbar-col-mdlapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#beers">Birre <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#contactus">Contattaci</a>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- END NAV -->
-    <!-- START CONTENT -->
-    <section class="section" id="beers">
-        <div class="container">
+        </nav>
+
+        <div class="container mt-6 pt-5" id="beers">
             <!-- PALE ALE -->
-            <div class="columns is-vcentered ">
-                <div class="column has-content-centered is-2 is-offset-1">
-                    <figure class="image is-beer-image">
-                        <img src="./resources/pale_ale.png">
+            <div class="row align-items-center">
+                <div class=" col-md-2 offset-1">
+                    <figure class="figure is-beer-image">
+                        <img src="./resources/pale_ale.png" class="figure-img img-fluid ">
                     </figure>
                 </div>
-                <div class="column is-6 is-offset-3">
-                    <div class="notification">
-                        <p class="title">
-                            Pale Ale <span class="has-text-weight-light is-size-7">6,0% vol.</span>
+                <div class="col-md-6 offset-3">
+                    <div class="alert alert-secondary">
+                        <p class="lead h1">
+                            Pale Ale <span class="has-text-weight-light h7">6,0% vol.</span>
                         </p>
-                        <div class="content has-text-justified">
+                        <div class="content text-justify">
                             Birra ad alta fermentazione dal colore dorato, delicata e piacevole da bere. Birra rinfrescante con gusto morbido e rotondo. La miscela di luppoli da il giusto amaro e un retrogusto agrumato.
                         </div>
-                        <div class="level is-mobile">
-                            <div class="level-left">
-                                <span class="level-item">Bevila con: </span>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/57.png" alt="Formaggio">
-                                    </figure>
-                                </div>
-                                <div class="level-item ">
-                                    <figure class=" image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/62.png" alt="Prosciutto">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class=" image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/69.png" alt="Salame">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/71.png" alt="Salsiccia">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="">Bevila con: </span>
+
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/57.png" alt="Formaggio">
+                        </figure>
+
+                        <figure class=" figure">
+                            <img src="./resources/icons/foodie/png/32px/62.png" alt="Prosciutto">
+                        </figure>
+
+                        <figure class=" figure">
+                            <img src="./resources/icons/foodie/png/32px/69.png" alt="Salame">
+                        </figure>
+
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/71.png" alt="Salsiccia">
+                        </figure>
                     </div>
                 </div>
             </div>
-            <!-- LIGHT ALE NO MOBILE-->
-            <div class="columns is-vcentered is-hidden-mobile">
-                <div class="column is-6">
-                    <div class="notification">
-                        <p class="title">
-                            Light Ale <span class="has-text-weight-light is-size-7">4,5% vol.</span>
+            <!-- LIGHT ALE -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="alert alert-secondary">
+                        <p class="lead h1">
+                            Light Ale <span class="has-text-weight-light h7">4,5% vol.</span>
                         </p>
-                        <div class="content has-text-justified">
+                        <div class="content text-justify">
                             Birra ad alta fermentazione dal colore chiaro, rinfrescante e beverina. Una birra dal colore chiaro con un amaro piacevole e un profumo di luppolo delicato.
                         </div>
-                        <div class="level is-mobile">
-                            <div class="level-left">
-                                <span class="level-item">Bevila con: </span>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/100.png" alt="Aperitivi">
-                                    </figure>
-                                </div>
+                        <span class="">Bevila con: </span>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/100.png" alt="Aperitivi">
+                        </figure>
 
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="column has-content-centered is-3 is-offset-3">
-                    <figure class="image is-beer-image">
-                        <img src="./resources/light_ale.png">
-                    </figure>
-                </div>
-            </div>
-            <!-- LIGHT ALE ONLY MOBILE-->
-            <!-- TEMP SOLUTION -->
-            <div class="columns is-vcentered is-hidden-tablet is-hidden-desktop is-hidden-fullhd is-hidden-widescreen">
 
-                <div class="column has-content-centered is-2 is-offset-1">
-                    <figure class="image is-beer-image">
-                        <img src="./resources/light_ale.png">
+                <div class=" col-md-3 offset-3">
+                    <figure class="figure is-beer-image">
+                        <img src="./resources/light_ale.png" class="figure-img img-fluid ">
                     </figure>
-                </div>
-                <div class="column is-6 is-offset-3">
-                    <div class="notification">
-                        <p class="title">
-                            Light Ale <span class="has-text-weight-light is-size-7">4,5% vol.</span>
-                        </p>
-                        <div class="content has-text-justified">
-                            Birra ad alta fermentazione dal colore chiaro, rinfrescante e beverina. Una birra dal colore chiaro con un amaro piacevole e un profumo di luppolo delicato.
-                        </div>
-                        <div class="level is-mobile">
-                            <div class="level-left">
-                                <span class="level-item">Bevila con: </span>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/100.png" alt="Aperitivi">
-                                    </figure>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- ITALIAN WHEAT ALE -->
-            <div class="columns is-vcentered">
-                <div class="column has-content-centered is-2 is-offset-1">
-                    <figure class="image is-beer-image">
-                        <img src="./resources/italian_wheat_ale.png">
+            <div class="row align-items-center">
+                <div class=" col-md-2 offset-1">
+                    <figure class="figure is-beer-image">
+                        <img src="./resources/italian_wheat_ale.png" class="figure-img img-fluid ">
                     </figure>
                 </div>
-                <div class="column is-6 is-offset-3">
-                    <div class="notification">
-                        <p class="title">
-                            Italian Wheat Ale <span class="has-text-weight-light is-size-7">5,0% vol.</span>
+                <div class="col-md-6 offset-3">
+                    <div class="alert alert-secondary">
+                        <p class="lead h1">
+                            Italian Wheat Ale <span class="has-text-weight-light h7">5,0% vol.</span>
                         </p>
-                        <div class="content has-text-justified">
+                        <div class="content text-justify">
                             Birra ad alta fermentazione dal colore chiaro profumata e beverina. Una birra dal corpo vellutato con schiuma bianca e stretta, gli agrumi le donano un profumo importante e un gusto rinfrescante.
                         </div>
-                        <div class="level is-mobile">
-                            <div class="level-left">
-                                <span class="level-item">Bevila con: </span>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/61.png" alt="Pollo">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/127.png" alt="Pesce">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/81.png" alt="Stuzzichini">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/116.png" alt="Pizza">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="">Bevila con: </span>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/61.png" alt="Pollo">
+                        </figure>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/127.png" alt="Pesce">
+                        </figure>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/81.png" alt="Stuzzichini">
+                        </figure>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/116.png" alt="Pizza">
+                        </figure>
                     </div>
                 </div>
             </div>
             <!-- DARK ALE NO MOBILE -->
-            <div class="columns is-vcentered is-hidden-mobile">
-                <div class="column is-6">
-                    <div class="notification">
-                        <p class="title">
-                            Dark Ale <span class="has-text-weight-light is-size-7">7,5% vol.</span>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="alert alert-secondary">
+                        <p class="lead h1">
+                            Dark Ale <span class="has-text-weight-light h7">7,5% vol.</span>
                         </p>
-                        <div class="content has-text-justified">
-                            Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato. Il suo colore e il sapore dei malti usati la rendono una birra particolarmente gustosa.
+                        <div class="content text-justify">
+                            Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato. Il suo colore e il sapore dei malti usati la rendono una birra particol-mdarmente gustosa.
                         </div>
-                        <div class="level is-mobile">
-                            <div class="level-left">
-                                <span class="level-item">Bevila con: </span>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/57.png" alt="Formaggio">
-                                    </figure>
-                                </div>
-                                <div class="level-item ">
-                                    <figure class=" image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/62.png" alt="Prosciutto">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class=" image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/69.png" alt="Salame">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/71.png" alt="Salsiccia">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/61.png" alt="Pollo">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/66.png" alt="Carne rossa">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column has-content-centered is-3 is-offset-3">
-                    <figure class="image is-beer-image">
-                        <img src="./resources/dark_ale.png">
-                    </figure>
-                </div>
-            </div>
-            <!-- DARK ALE ONLY MOBILE-->
-            <!-- TEMP SOLUTION -->
-            <div class="columns is-vcentered is-hidden-tablet is-hidden-desktop is-hidden-fullhd is-hidden-widescreen">
-                <div class="column has-content-centered is-2 is-offset-1">
-                    <figure class="image is-beer-image">
-                        <img src="./resources/dark_ale.png">
-                    </figure>
-                </div>
-                <div class="column is-6 is-offset-3">
-                    <div class="notification">
-                        <p class="title">
-                            Dark Ale <span class="has-text-weight-light is-size-7">7,5% vol.</span>
-                        </p>
-                        <div class="content has-text-justified">
-                            Birra ad alta fermentazione dal colore scuro con gusto deciso e tostato. Il suo colore e il sapore dei malti usati la rendono una birra particolarmente gustosa.
-                        </div>
-                        <div class="level is-mobile">
-                            <div class="level-left">
-                                <span class="level-item">Bevila con: </span>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/57.png" alt="Formaggio">
-                                    </figure>
-                                </div>
-                                <div class="level-item ">
-                                    <figure class=" image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/62.png" alt="Prosciutto">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class=" image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/69.png" alt="Salame">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/71.png" alt="Salsiccia">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/61.png" alt="Pollo">
-                                    </figure>
-                                </div>
-                                <div class="level-item">
-                                    <figure class="image is-24x24">
-                                        <img src="./resources/icons/foodie/png/32px/66.png" alt="Carne rossa">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT -->
-    <section class="section is-medium" id="contact">
-        <div class="container">
-            <h1 class="title has-text-centered">Contattaci</h1>
-            <p class="is-size-6 has-text-justified">
-                In caso tu voglia avere maggiori informazioni riguardo la birra, il birrificio o una collaborazione con Birra Amore, non esitare a contattarci. Il nostro team sarà felice di rispondere al più presto alle tue richieste!
-            </p>
-            <!-- Contact icons -->
-            <div class="level pt-6">
-                <!-- Instagram -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="https://www.instagram.com/birraamore/"><i class="fab fa-instagram"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2">
-                            <a class="has-text-dark" href="https://www.instagram.com/birraamore/">@birraamore</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- Facebook -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="https://www.facebook.com/birraamore/"><i class="fab fa-facebook"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2">
-                            <a class="has-text-dark" href="https://www.facebook.com/birraamore/">@birraamore</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- Email -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="mailto:info@amorebirra.it"><i class="fas fa-envelope-open-text"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2">
-                            <a class="has-text-dark" href="mailto:info@amorebirra.it">info@amorebirra.it</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- Brochure -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="./resources/Brochure%20Birra%20Amore_DEF.pdf"><i class="fas fa-file-download"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2"><a class="has-text-dark" href="./resources/Brochure%20Birra%20Amore_DEF.pdf">Brochure</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <div class="columns is-vcentered">
-                    <!-- LOGO -->
-                    <div class="column has-content-centered">
-                        <figure class="image is-128x128 mb-6">
-                            <img src="./resources/logo_testo_1000.png">
+                        <span class="">Bevila con: </span>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/57.png" alt="Formaggio">
+                        </figure>
+                        <figure class=" figure">
+                            <img src="./resources/icons/foodie/png/32px/62.png" alt="Prosciutto">
+                        </figure>
+                        <figure class=" figure">
+                            <img src="./resources/icons/foodie/png/32px/69.png" alt="Salame">
+                        </figure>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/71.png" alt="Salsiccia">
+                        </figure>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/61.png" alt="Pollo">
+                        </figure>
+                        <figure class="figure">
+                            <img src="./resources/icons/foodie/png/32px/66.png" alt="Carne rossa">
                         </figure>
                     </div>
-                    <!-- INFO -->
-                    <div class="column">
-                        <p class="is-size-7">Prodotto da <strong>TERRAVECCHIA s.r.l.</strong>
-                            <br>Distribuito da <strong>BIRRA AMORE s.r.l.</strong>
-                            <br>FRASSO TELESINO (BN)
-                            <br>P. IVA 01235860622
-                        </p>
-                        <p class="is-size-7">
-                            Contattaci:
-                            <a href="tel:+390824973016">+39 0824 973016</a> |
-                            <a href="tel:+393386085634">+39 338 6085 634</a>
-                            <br>Scrivici:
-                            <a href="mailto:info@amorebirra.it">info@amorebirra.it</a>
-                        </p>
+                </div>
+                <div class="col-md-3 offset-3">
+                    <figure class="figure is-beer-image">
+                        <img src="./resources/dark_ale.png" class="figure-img img-fluid ">
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="container" id="contact">
+                <h1 class="text-center">Contattaci</h1>
+                <p class="is-size-6 text-justify">
+                    In caso tu voglia avere maggiori informazioni riguardo la birra, il birrificio o una col-mdlaborazione con Birra Amore, non esitare a contattarci. Il nostro team sarà felice di rispondere al più presto alle tue richieste!
+                </p>
+                <!-- Contact icons -->
+                <div class="row pt-6">
+                    <!-- Instagram -->
+                    <div class="col-md text-center">
+                        <div>
+                            <p class="h1">
+                                <span class="icon">
+								<a class="text-secondary" href="https://www.instagram.com/birraamore/"><i class="fab fa-instagram"></i></a>
+							</span>
+                            </p>
+                            <p class="pt-2">
+                                <a class="text-secondary" href="https://www.instagram.com/birraamore/">@birraamore</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Facebook -->
+                    <div class="col-md text-center">
+                        <div>
+                            <p class="h1">
+                                <span class="icon">
+								<a class="text-secondary" href="https://www.facebook.com/birraamore/"><i class="fab fa-facebook"></i></a>
+							</span>
+                            </p>
+                            <p class=" pt-2">
+                                <a class="text-secondary" href="https://www.facebook.com/birraamore/">@birraamore</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-md text-center">
+                        <div>
+                            <p class="h1">
+                                <span class="icon">
+								<a class="text-secondary" href="mailto:info@amorebirra.it"><i class="fas fa-envelope-open-text"></i></a>
+							</span>
+                            </p>
+                            <p class=" pt-2">
+                                <a class="text-secondary" href="mailto:info@amorebirra.it">info@amorebirra.it</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Brochure -->
+                    <div class="col-md text-center">
+                        <div>
+                            <p class="h1">
+                                <span class="icon">
+								<a class="text-secondary" href="./resources/Brochure%20Birra%20Amore_DEF.pdf"><i class="fas fa-file-download"></i></a>
+							</span>
+                            </p>
+                            <p class=" pt-2"><a class="text-secondary" href="./resources/Brochure%20Birra%20Amore_DEF.pdf">Brochure</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+        <footer class="footer alert alert-secondary text-center">
+            <div class="row ">
+                <!-- LOGO -->
+                <div class="col-md">
+                    <figure class="figure md-logo mb-6">
+                        <img src="./resources/logo_testo_1000.png" class="figure-img img-fluid " alt="Logo">
+                    </figure>
+                </div>
+                <!-- INFO -->
+                <div class="col-md">
+                    <p class="is-size-7">Prodotto da <strong>TERRAVECCHIA s.r.l.</strong>
+                        <br>Distribuito da <strong>BIRRA AMORE s.r.l.</strong>
+                        <br>FRASSO TELESINO (BN)
+                        <br>P. IVA 01235860622
+                    </p>
+                    <p class="is-size-7">
+                        Contattaci:
+                        <a href="tel:+390824973016">+39 0824 973016</a> |
+                        <a href="tel:+393386085634">+39 338 6085 634</a>
+                        <br>Scrivici:
+                        <a href="mailto:info@amorebirra.it">info@amorebirra.it</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
 
-    <!-- jQuery and custom JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-
-    <!-- Quack
+        <!-- Quack
 		>(.)__ 		<(.)__
 		 (___/  	 (___/
 		@lucaam		@imgios

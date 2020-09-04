@@ -6,6 +6,7 @@
     .is-beer-image {
         width: 128px !important;
         height: 385px !important;
+        margin-top: 15px;
     }
     
     .sm-logo {

@@ -15,9 +15,9 @@ This repository contains the Birra Amore website, available on <a href="https://
 - FontAwesome
 
 ###### Authors
-- Luca Amoriello
+- <img src="https://avatars2.githubusercontent.com/u/21973580?s=460&u=9740d29488b53b7b1dc8483fe63e8fd72738946e&v=4" height="20"> Luca Amoriello
   - [GitHub Profile](https://github.com/lucaam)
   - [Website](http://lucaamoriello.dev/)
-- Giosuè Sulipano
+- <img src="https://avatars2.githubusercontent.com/u/34242779?s=460&u=9efe8c613c7e7554dc917592723cc81780ef8608&v=4" height="20"> Giosuè Sulipano
   - [GitHub Profile](https://github.com/imgios)
   - [Website](http://giosuesulipano.it/)

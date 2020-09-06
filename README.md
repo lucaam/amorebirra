@@ -15,9 +15,16 @@ This repository contains the Birra Amore website, available on <a href="https://
 - FontAwesome
 
 ###### Authors
-- <img src="https://avatars2.githubusercontent.com/u/21973580?s=460&u=9740d29488b53b7b1dc8483fe63e8fd72738946e&v=4" height="20"> Luca Amoriello
-  - [GitHub Profile](https://github.com/lucaam)
-  - [Website](http://lucaamoriello.dev/)
-- <img src="https://avatars2.githubusercontent.com/u/34242779?s=460&u=9efe8c613c7e7554dc917592723cc81780ef8608&v=4" height="20"> Giosuè Sulipano
-  - [GitHub Profile](https://github.com/imgios)
-  - [Website](http://giosuesulipano.it/)
+
+<img src="https://avatars2.githubusercontent.com/u/21973580?s=460&u=9740d29488b53b7b1dc8483fe63e8fd72738946e&v=4" height="50" align="left">
+<h6>
+  Luca Amoriello<br/>
+  <a href="https://github.com/lucaam">GitHub</a> · 
+  <a href="http://lucaamoriello.dev/">lucaamoriello.dev</a>
+</h6>
+<img src="https://avatars2.githubusercontent.com/u/34242779?s=460&u=9efe8c613c7e7554dc917592723cc81780ef8608&v=4" height="50" align="left">
+<h6>
+  Giosuè Sulipano<br/>
+  <a href="https://github.com/imgios">GitHub</a> · 
+  <a href="https://giosuesulipano.it/">giosuesulipano.it</a>
+</h6>

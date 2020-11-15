@@ -123,6 +123,11 @@ const lightAle = document.querySelector("#light-ale");
 const italianWheatAle = document.querySelector("#italian-wheat-ale");
 const darkAle = document.querySelector("#dark-ale");
 
+const paleAleDesc = document.querySelector("#pale-ale-desc");
+const lightAleDesc = document.querySelector("#light-ale-desc");
+const italianWheatAleDesc = document.querySelector("#italian-wheat-ale-desc");
+const darkAleDesc = document.querySelector("#dark-ale-desc");
+
 const start = document.querySelector("#trigger");
 const trigger2 = document.querySelector("#trigger2");
 const trigger3 = document.querySelector("#trigger3");
@@ -130,7 +135,7 @@ const trigger4 = document.querySelector("#trigger4");
 
 // Animate Pale Ale
 var tlImages1 = new TimelineMax();
-tlImages1.from(paleAle, { opacity: 0, x: -250 }).to(paleAle, { opacity: 1 });
+tlImages1.from(paleAle, { opacity: 0, x: -250 }).to(paleAle, { opacity: 1 }).from(paleAleDesc, { opacity: 0, x: -250 }).to(paleAleDesc, { opacity: 1 });
 const scene2 = new ScrollMagic.Scene({
   duration: 400,
   triggerElement: start,
@@ -142,7 +147,7 @@ const scene2 = new ScrollMagic.Scene({
 
 // Animate Light Ale
 var tlImages2 = new TimelineMax();
-tlImages2.from(lightAle, { opacity: 0, x: +250 }).to(lightAle, { opacity: 1 });
+tlImages2.from(lightAle, { opacity: 0, x: +250 }).to(lightAle, { opacity: 1 }).from(lightAleDesc, { opacity: 0, x: -250 }).to(lightAleDesc, { opacity: 1 });
 const scene3 = new ScrollMagic.Scene({
   duration: 400,
   triggerElement: trigger2,
@@ -156,7 +161,7 @@ const scene3 = new ScrollMagic.Scene({
 var tlImages3 = new TimelineMax();
 tlImages3
   .from(italianWheatAle, { opacity: 0, x: -250 })
-  .to(italianWheatAle, { opacity: 1 });
+  .to(italianWheatAle, { opacity: 1 }).from(italianWheatAleDesc, { opacity: 0, x: -250 }).to(italianWheatAleDesc, { opacity: 1 });
 const scene4 = new ScrollMagic.Scene({
   duration: 400,
   triggerElement: trigger3,
@@ -168,7 +173,8 @@ const scene4 = new ScrollMagic.Scene({
 
 // Animate Dark Ale
 var tlImages4 = new TimelineMax();
-tlImages4.from(darkAle, { opacity: 0, x: +250 }).to(darkAle, { opacity: 1 });
+tlImages4.from(darkAle, { opacity: 0, x: +250 }).to(darkAle, { opacity: 1 }).from(darkAleDesc, { opacity: 0, x: -250 }).to(darkAleDesc, { opacity: 1 });
+
 const scene5 = new ScrollMagic.Scene({
   duration: 400,
   triggerElement: trigger4,

@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+
     <title>Birra Amore - Scopri le nostre birre artigianali</title>
     <link rel="shortcut icon" type="image/x-icon" href="./resources/pint.png" />
     <meta name="description"
@@ -34,6 +37,30 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="110844130746897" theme_color="#0A7CFF"
+        logged_in_greeting="Ciao, se vuoi informazioni in tempo reale avvia una conversazione!"
+        logged_out_greeting="Ciao, se vuoi informazioni in tempo reale avvia una conversazione!">
+    </div>
     <!-- <div class="container-fluid is-fullheight-background h-100 justify-content-center align-items-center" id="welcome-image">
         <div class="text-center floating-center col-md">
             <div>
@@ -54,35 +81,35 @@
 
     </div> -->
     <div class="intro">
-            <h1 id="title" class="is-contrast-text text-uppercase">Birra 
-                <strong>Amore</strong>
-            </h1>
-            
-            <h2 id="first" class="text-left display-5 is-contrast-text">
-                <span>A</span><strong id="final1">cqua</strong>
-            </h2>
-            <h2 id="second" class="text-left display-5 is-contrast-text">
-                <span>M</span><strong id="final2">alto</strong>
-            </h2>
-            <h2 id="third" class="text-left display-5 is-contrast-text">
-                <span>O</span><strong id="final3">rzo</strong>
-            </h2>
-            <h2 id="fourth" class="text-left display-5 is-contrast-text">
-                <span>R</span><strong id="final4">infrescante</strong>
-            </h2>
-            <h2 id="fifth" class="text-left display-5 is-contrast-text">
-                <span>E</span><strong id="final5">ffervescente</strong>
-            </h2>
-            
-       
+        <h1 id="title" class="is-contrast-text text-uppercase">Birra
+            <strong>Amore</strong>
+        </h1>
+
+        <h2 id="first" class="text-left display-5 is-contrast-text">
+            <span>A</span><strong id="final1">cqua</strong>
+        </h2>
+        <h2 id="second" class="text-left display-5 is-contrast-text">
+            <span>M</span><strong id="final2">alto</strong>
+        </h2>
+        <h2 id="third" class="text-left display-5 is-contrast-text">
+            <span>O</span><strong id="final3">rzo</strong>
+        </h2>
+        <h2 id="fourth" class="text-left display-5 is-contrast-text">
+            <span>R</span><strong id="final4">infrescante</strong>
+        </h2>
+        <h2 id="fifth" class="text-left display-5 is-contrast-text">
+            <span>E</span><strong id="final5">ffervescente</strong>
+        </h2>
+
+
         <video autoplay muted>
             <source src="./resources/small.mp4">
             <source src="./resources/small.webm">
         </video>
     </div>
     <div id="trigger">
-  
-        </div>
+
+    </div>
 
     <div class="container" id="start">
         <div class="container pt-5 text-center">
@@ -124,7 +151,7 @@
                     </figure>
                 </div>
                 <div id="trigger2" class="col-md-6 offset-md-3">
-                    <div class="notification">
+                    <div id="pale-ale-desc" class="notification">
                         <p class="display-6 font-weight-light">
                             Pale Ale <span class="font-weight-light lead">6,0% vol.</span>
                         </p>
@@ -159,7 +186,7 @@
                     </div>
                 </div>
             </div>
-<!-- 
+            <!-- 
             <div id="trigger2">
   
             </div> -->
@@ -167,7 +194,7 @@
             <!-- LIGHT ALE -->
             <div class="row align-items-center">
                 <div id="trigger3" class="col-md-6 order-md-first order-sm-last order-last">
-                    <div class="notification">
+                    <div id="light-ale-desc" class="notification">
                         <p class="display-6 font-weight-light">
                             Light Ale <span class="font-weight-light lead">4,5% vol.</span>
                         </p>
@@ -192,7 +219,7 @@
                     </figure>
                 </div>
             </div>
-<!-- 
+            <!-- 
             <div id="trigger3">
   
             </div> -->
@@ -204,7 +231,7 @@
                     </figure>
                 </div>
                 <div id="trigger4" class="col-md-6 offset-md-3">
-                    <div class="notification">
+                    <div id="italian-wheat-ale-desc" class="notification">
                         <p class="display-6 font-weight-light">
                             Italian Wheat Ale <span class="font-weight-light lead">5,0% vol.</span>
                         </p>
@@ -235,14 +262,14 @@
                     </div>
                 </div>
             </div>
-<!-- 
+            <!-- 
             <div id="trigger4">
   
             </div> -->
             <!-- DARK ALE -->
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-first order-sm-last order-last">
-                    <div class="notification">
+                    <div id="dark-ale-desc" class="notification">
                         <p class="display-6 font-weight-light">
                             Dark Ale <span class="font-weight-light lead">7,5% vol.</span>
                         </p>
@@ -403,7 +430,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
             integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
             crossorigin="anonymous"></script>
-            
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
             integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
             crossorigin="anonymous"></script>

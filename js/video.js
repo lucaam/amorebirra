@@ -28,6 +28,7 @@ if (!getMobileOperatingSystem() == "Android") {
   //Autoplay must be false because if not a flickering is present on the video when there is no scroll
 }
 
+
 var tl = new TimelineMax();
 
 tl.from(text, 0.5, { opacity: 0, y: -50 })
@@ -97,19 +98,23 @@ const scene1 = new ScrollMagic.Scene({
   .setTween(tl)
   .addTo(controller);
 
-  //Video Animation
-let accelamount = 0.1;
+//Video Animation
+
 let scrollpos = 0;
-let delay = 0;
+// Enable if you want a delay from stop scroll to stop video
+// let accelamount = 0.1;
+// let delay = 1;
 
 scene.on("update", (e) => {
   scrollpos = e.scrollPos / 1000;
 });
 
 setInterval(() => {
-  delay += (scrollpos - delay) * accelamount;
+  // Enable if you want a delay from stop scroll to stop video
+  // delay += (scrollpos - delay) * accelamount;
+  // video.currentTime = delay;
 
-  video.currentTime = delay;
+  video.currentTime = scrollpos;
 }, 40);
 
 //Beers aniamtion
@@ -127,50 +132,48 @@ const trigger4 = document.querySelector("#trigger4");
 var tlImages1 = new TimelineMax();
 tlImages1.from(paleAle, { opacity: 0, x: -250 }).to(paleAle, { opacity: 1 });
 const scene2 = new ScrollMagic.Scene({
-    duration: 400,
-    triggerElement: start,
-    triggerHook: 0,
-  })
-    .addIndicators()
-    .setTween(tlImages1)
-    .addTo(controller);
+  duration: 400,
+  triggerElement: start,
+  triggerHook: 0,
+})
+  .addIndicators()
+  .setTween(tlImages1)
+  .addTo(controller);
 
 // Animate Light Ale
 var tlImages2 = new TimelineMax();
 tlImages2.from(lightAle, { opacity: 0, x: +250 }).to(lightAle, { opacity: 1 });
 const scene3 = new ScrollMagic.Scene({
-    duration: 400,
-    triggerElement: trigger2,
-    triggerHook: 0,
-  })
-    .addIndicators()
-    .setTween(tlImages2)
-    .addTo(controller);
-
+  duration: 400,
+  triggerElement: trigger2,
+  triggerHook: 0,
+})
+  .addIndicators()
+  .setTween(tlImages2)
+  .addTo(controller);
 
 // Animate Italian Wheat Ale
 var tlImages3 = new TimelineMax();
 tlImages3
   .from(italianWheatAle, { opacity: 0, x: -250 })
   .to(italianWheatAle, { opacity: 1 });
-  const scene4 = new ScrollMagic.Scene({
-    duration: 400,
-    triggerElement: trigger3,
-    triggerHook: 0,
-  })
-    .addIndicators()
-    .setTween(tlImages3)
-    .addTo(controller);
+const scene4 = new ScrollMagic.Scene({
+  duration: 400,
+  triggerElement: trigger3,
+  triggerHook: 0,
+})
+  .addIndicators()
+  .setTween(tlImages3)
+  .addTo(controller);
 
 // Animate Dark Ale
 var tlImages4 = new TimelineMax();
 tlImages4.from(darkAle, { opacity: 0, x: +250 }).to(darkAle, { opacity: 1 });
 const scene5 = new ScrollMagic.Scene({
-    duration: 400,
-    triggerElement: trigger4,
-    triggerHook: 0,
-  })
-    .addIndicators()
-    .setTween(tlImages4)
-    .addTo(controller);
-
+  duration: 400,
+  triggerElement: trigger4,
+  triggerHook: 0,
+})
+  .addIndicators()
+  .setTween(tlImages4)
+  .addTo(controller);

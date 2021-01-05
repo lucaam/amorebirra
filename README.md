@@ -16,7 +16,7 @@ This repository contains the Birra Amore website, available on <a href="https://
 
 ###### Authors
 
-<img src="https://avatars2.githubusercontent.com/u/21973580?s=460&u=9740d29488b53b7b1dc8483fe63e8fd72738946e&v=4" height="50" align="left">
+<!-- <img src="https://avatars2.githubusercontent.com/u/21973580?s=460&u=9740d29488b53b7b1dc8483fe63e8fd72738946e&v=4" height="50" align="left">
 <h6>
   Luca Amoriello<br/>
   <a href="https://github.com/lucaam">GitHub</a> · 
@@ -27,4 +27,8 @@ This repository contains the Birra Amore website, available on <a href="https://
   Giosuè Sulipano<br/>
   <a href="https://github.com/imgios">GitHub</a> · 
   <a href="https://giosuesulipano.it/">giosuesulipano.it</a>
-</h6>
+</h6> -->
+
+<a href="https://github.com/lucaam/amorebirra/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=lucaam/amorebirra" />
+</a>

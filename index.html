@@ -418,7 +418,7 @@
                         <div class="field">
                             <label class="label">Nome</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="text" name="name" placeholder="Il tuo nome">
+                                <input class="input" type="text" name="name" placeholder="Il tuo nome" autocomplete="off" minlength="3" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -427,7 +427,7 @@
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control has-icons-left">
-                                <input class="input" type="email" name="email" placeholder="La tua email">
+                                <input class="input" type="email" name="email" placeholder="La tua email" pattern="^\w+([\._\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w+)+$" required>
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
@@ -436,7 +436,7 @@
                         <div class="field">
                             <label class="label">Messaggio</label>
                             <div class="control">
-                            <textarea class="textarea" name="message" placeholder="Scrivi il tuo messaggio"></textarea>
+                            <textarea class="textarea" name="message" placeholder="Scrivi il tuo messaggio" required></textarea>
                             </div>
                         </div>
                         <div class="field is-grouped">

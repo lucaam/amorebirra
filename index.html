@@ -381,57 +381,70 @@
             <p class="is-size-6 has-text-justified">
                 In caso tu voglia avere maggiori informazioni riguardo la birra, il birrificio o una collaborazione con Birra Amore, non esitare a contattarci. Il nostro team sarà felice di rispondere al più presto alle tue richieste!
             </p>
-            <!-- Contact icons -->
-            <div class="level pt-6">
-                <!-- Instagram -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="https://www.instagram.com/birraamore/"><i class="fab fa-instagram"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2">
-                            <a class="has-text-dark" href="https://www.instagram.com/birraamore/">@birraamore</a>
-                        </p>
-                    </div>
+            <div class="columns is-vcentered pt-5">
+                <div class="column is-two-fifths has-text-centered">
+                    <!-- Contact icons -->
+                    <span class="icon is-large">
+                        <a class="has-text-dark" href="https://www.instagram.com/birraamore/"><i class="fab fa-2x fa-instagram"></i></a>
+                        </span>
+                    <p class="heading">
+                        <a class="has-text-dark" href="https://www.instagram.com/birraamore/">@birraamore</a>
+                    </p>
+                    <!-- Facebook -->
+                    <span class="icon is-large pt-5">
+                        <a class="has-text-dark" href="https://www.facebook.com/birraamore/"><i class="fab fa-2x fa-facebook"></i></a>
+                    </span>
+                    <p class="heading pt-1">
+                        <a class="has-text-dark" href="https://www.facebook.com/birraamore/">@birraamore</a>
+                    </p>
+                    <!-- Email -->
+                    <span class="icon is-large pt-5">
+                        <a class="has-text-dark" href="mailto:info@amorebirra.it"><i class="fas fa-2x fa-envelope-open-text"></i></a>
+                    </span>
+                    <p class="heading pt-1">
+                        <a class="has-text-dark" href="mailto:info@amorebirra.it">info@amorebirra.it</a>
+                    </p>
+                    <!-- Brochure -->
+                    <span class="icon is-large pt-5">
+                        <a class="has-text-dark" href="./resources/Brochure%20Birra%20Amore_DEF.pdf"><i class="fas fa-2x fa-file-download"></i></a>
+                    </span>
+                    <p class="heading pt-1">
+                        <a class="has-text-dark" href="./resources/Brochure%20Birra%20Amore_DEF.pdf">Brochure</a>
+                    </p>
                 </div>
-                <!-- Facebook -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="https://www.facebook.com/birraamore/"><i class="fab fa-facebook"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2">
-                            <a class="has-text-dark" href="https://www.facebook.com/birraamore/">@birraamore</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- Email -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="mailto:info@amorebirra.it"><i class="fas fa-envelope-open-text"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2">
-                            <a class="has-text-dark" href="mailto:info@amorebirra.it">info@amorebirra.it</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- Brochure -->
-                <div class="level-item has-text-centered">
-                    <div>
-                        <p class="title">
-                            <span class="icon">
-								<a class="has-text-dark" href="./resources/Brochure%20Birra%20Amore_DEF.pdf"><i class="fas fa-file-download"></i></a>
-							</span>
-                        </p>
-                        <p class="heading pt-2"><a class="has-text-dark" href="./resources/Brochure%20Birra%20Amore_DEF.pdf">Brochure</a></p>
-                    </div>
+                <div class="column">
+                    <!-- Contact Form -->
+                    <form method="post" action="https://airform.io/info@amorebirra.it">
+                        <div class="field">
+                            <label class="label">Nome</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="text" name="name" placeholder="Il tuo nome" autocomplete="off" minlength="3" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" name="email" placeholder="La tua email" pattern="^\w+([\._\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w+)+$" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Messaggio</label>
+                            <div class="control">
+                            <textarea class="textarea" name="message" placeholder="Scrivi il tuo messaggio" minlength="20" required></textarea>
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link">Invia</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
